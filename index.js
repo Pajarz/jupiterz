@@ -188,7 +188,7 @@ module.exports = hexa = async (hexa, mek) => {
 
         const pushname = mek.key.fromMe ? hexa.user.name : conts.notify || conts.vname || conts.name || '-'
 
-        const isOwner = ownerNumber.includes(sender)
+        const isOwner = ownerNumbers.includes(sender)
 
 
 
