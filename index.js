@@ -421,7 +421,7 @@ module.exports = hexa = async (hexa, mek) => {
 
                 var names = Date.now() / 10000;
 
-                var download =  (uri, filename, callback) {
+                var download = function (uri, filename, callback) {
 
                     request.head(uri, function (err, res, body) {
 
