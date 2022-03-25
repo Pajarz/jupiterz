@@ -745,7 +745,7 @@ else if(modelmenu == 'katalog'){
          "sellerJid": "6285770292764@s.whatsapp.net",
          "token": "AR6fNLe1p/2qa2FUHIMk4gXm2TWMqjREXIZwKbk4lUt58Q==",
            }},{quoted: mek})
-           heca.relayWAMessage(menuuu)
+           hexa.relayWAMessage(menuuu)
           }
  else if (modelmenu = 'button'){ 
         teks = `${menunya}`
