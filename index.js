@@ -48,7 +48,8 @@ const time = moment().tz('Asia/Jakarta').format("HH:mm:ss")
 const Exif = require('./lib/exif');
 const exif = new Exif();
 
-banChats = true
+banChats = false
+thumbnail = fs.readFileSync('./foto/thumb.jpeg')
 owner = '6288293524506'
 fake = 'BOT-•~•'
 //=================================================//
