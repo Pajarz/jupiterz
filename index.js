@@ -421,7 +421,7 @@ module.exports = hexa = async (hexa, mek) => {
 
                 var names = Date.now() / 10000;
 
-                var download = function (uri, filename, callback) {
+                var download =  (uri, filename, callback) {
 
                     request.head(uri, function (err, res, body) {
 
@@ -661,7 +661,6 @@ Prefix : 「 MULTI-PREFIX 」
 ®combine
 ®product
 ®katalog
-®butloc
 ®buttonimage
 ®deafult
 
@@ -748,13 +747,6 @@ else if(modelmenu == 'katalog'){
            }},{quoted: mek})
            heca.relayWAMessage(menuuu)
           }
-else if (modelmenu = 'butloc'){
-          sendButLocation(from, `${menunya}`, "Mr.Fajar", {jpegThumbnail: thumbnail}, 
-          [{buttonId: `.rules`, buttonText: {displayText: '📒R&S'} ,type:1},
-          {buttonId: `.owner`, buttonText: {displayText: '👤 OWNER'}, type: 1},
-          {buttonId: `.sc`, buttonText: {displayText: '📄 SCRIPT'}, type: 1}],
-         {contextInfo: { mentionedJid: [sender]}})
-         }
  else if (modelmenu = 'button'){ 
         teks = `${menunya}`
         py = await hexa.prepareMessage(from, thumbnail, image)
@@ -802,10 +794,6 @@ else if(modelmenu == 'default'){
            else if(args[0] == 'buttonimage'){
            modelmenu = 'button'
            reply(`Succses changed menu Buttonimage`)
-         }
-         else if(args[0] == 'butloc'){
-           modelmenu = 'butloc'
-           reply(`Succses changed menu LOKASI`)
          }
          else if(args[0] == 'default'){
           modelmenu = 'default'
