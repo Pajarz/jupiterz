@@ -99,7 +99,7 @@ const exif = new Exif();
 
 
 banChats = false
-modelmenu = 'butloc'
+modelmenu = 'button'
 thumbnail = fs.readFileSync('./foto/thumb.jpeg')
 
 owner = '6288293524506'
@@ -662,7 +662,7 @@ Prefix : 「 MULTI-PREFIX 」
 ®product
 ®katalog
 ®butloc
-®button
+®buttonimage
 ®deafult
 
 ❏ *SELF-BOT* ❏`
